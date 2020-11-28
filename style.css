@@ -1,0 +1,168 @@
+/*
+ Theme Name:   Eleanores Project
+ Template:     kale
+*/
+
+/* colors
+light-bone: #F5F6EE
+dark-gray: #8E8B8B
+main-periwinkle: #A197CA
+accent-wine: #8D6287
+accent-blue: #325C8D
+*/
+
+/***********/
+/* Globals */
+/***********/
+
+body {
+	font-size: 17px;
+	line-height: 1.55em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: capitalize;
+}
+
+p {
+	font-size: 1em; 
+}
+
+#content a,
+.entry-title a,
+.entry-content p a, 
+.page-content p a  {
+	color: #325C8D;
+	text-decoration: underline;
+ }
+
+#content a:hover, 
+#content a:focus,
+.entry-content p a:hover, 
+.page-content p a:hover,
+.entry-content p a:focus, 
+.page-content p a:focus   {
+	color: #8D6287;
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+#content a:visited,
+.entry-content p a:visited, 
+.page-content p a:visited  {
+	color: #8D6287;
+ }
+
+/************/
+/* Template */
+/************/
+
+body.custom-background .main-wrapper {
+    background-color: #fff;
+}
+
+/*******************************/
+/* Blog post summary overrides */
+/*******************************/
+
+.entry-title {
+	font-weight: bold;
+	letter-spacing: normal;
+}
+
+.entry-title a {
+	text-decoration: 0;
+}
+
+.entry-summary {
+	line-height: 1.45em;
+	text-align: left;
+}
+
+/* ****** Home Page ****** */
+
+.frontpage-featured-posts .block-title {
+    color: #8D6287;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.frontpage-featured-posts h2 {
+
+}
+
+.NextPost {
+	box-sizing: border-box;
+	width: 50%;
+	float: left; /*forces one besides the other*/
+	padding-right: 30px;
+}
+
+.NextPost h3 {
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
+
+.NextPost a {
+	color: #325C8D;
+}
+
+
+/* ***Main Navbar*** */
+
+.navbar-default
+ {
+	background-color: #a197ca;
+	border-color: #a197ca;
+ }
+ 
+ .navbar-default .navbar-nav li a
+ {
+	 font-size: 1em;
+	 color: #000;
+	 text-transform: capitalize;
+ }
+ 
+ .navbar-default .navbar-nav li a:focus
+ {
+	 text-decoration: underline;
+ }
+ 
+ .navbar-default .navbar-nav li a:hover
+ {
+	 background: #F5F6EE;
+	 text-decoration: underline;
+ }
+ 
+/****************************/
+/* Entry template overrides */
+/****************************/
+
+.entry h1 {
+	color: #8D6287;
+    font-size: 2.1em;
+    font-weight: normal;
+}
+
+/***********************/
+/* Post page overrides */
+/***********************/
+
+.blog-feed .row.two-columns {
+	margin-left: 0;
+}
+
+
+/*****************************************/
+/* Media Queries - yanked from Bootstrap */
+/*****************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+	.NextPost {
+		float: none;
+		width: 100%;
+	}
+}
+
